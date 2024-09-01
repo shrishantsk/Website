@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Skills - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            color: #ffffff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        nav a.active {
+            color: #b74b4b;
+        }
+
+        section.skills {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .skills-box {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+            transition: transform 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-10px);
+        }
+
+        .skill i {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .video-section {
+            padding: 50px 20px;
+            background-color: #1a1a1a;
+        }
+
+        .video-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .video-item {
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .video-item img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            border: 2px solid #fff;
+            border-radius: 8px;
+        }
+
+        .video-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .video-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Shrishant</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="skills">
+        <div class="container">
+            <h1>My Skills</h1>
+            <div class="skills-box">
+                <a href="#gaming-videos" class="scroll-to">
+                    <div class="skill">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h2>Gaming Videos</h2>
+                        <p>Expert in creating immersive gaming content that captivates audiences.</p>
+                    </div>
+                </a>
+                <a href="#short-videos" class="scroll-to">
+                    <div class="skill">
+                        <i class="fa-solid fa-video"></i>
+                        <h2>Short Videos</h2>
+                        <p>Specialized in producing engaging short videos for social media platforms.</p>
+                    </div>
+                </a>
+                <a href="#cinematic-videos" class="scroll-to">
+                    <div class="skill">
+                        <i class="fa-solid fa-film"></i>
+                        <h2>Cinematic Videos</h2>
+                        <p>Craft visually stunning cinematic videos that tell compelling stories.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="gaming-videos" class="video-section">
+        <h2>Gaming Videos</h2>
+        <div class="video-gallery">
+            <a href="https://www.youtube.com/watch?v=lmC0m2IGreo" target="_blank" class="video-item">
+                <img src="lmC0m2IGreo-HD.jpg" alt="Gaming Video 1">
+            </a>
+            <a href="https://link-to-your-video2.com" target="_blank" class="video-item">
+                <img src="gaming-video2.jpg" alt="Gaming Video 2">
+            </a>
+            <a href="https://link-to-your-video3.com" target="_blank" class="video-item">
+                <img src="gaming-video3.jpg" alt="Gaming Video 3">
+            </a>
+        </div>
+    </section>
+    <section id="short-videos" class="video-section">
+        <h2>Short Videos</h2>
+        <div class="video-gallery">
+            <a href="https://link-to-your-video4.com" target="_blank" class="video-item">
+                <img src="short-video1.jpg" alt="Short Video 1">
+            </a>
+            <a href="https://link-to-your-video5.com" target="_blank" class="video-item">
+                <img src="short-video2.jpg" alt="Short Video 2">
+            </a>
+            <a href="https://link-to-your-video6.com" target="_blank" class="video-item">
+                <img src="short-video3.jpg" alt="Short Video 3">
+            </a>
+        </div>
+    </section>
+    <section id="cinematic-videos" class="video-section">
+        <h2>Cinematic Videos</h2>
+        <div class="video-gallery">
+            <a href="https://link-to-your-video7.com" target="_blank" class="video-item">
+                <img src="cinematic-video1.jpg" alt="Cinematic Video 1">
+            </a>
+            <a href="https://link-to-your-video8.com" target="_blank" class="video-item">
+                <img src="cinematic-video2.jpg" alt="Cinematic Video 2">
+            </a>
+            <a href="https://link-to-your-video9.com" target="_blank" class="video-item">
+                <img src="cinematic-video3.jpg" alt="Cinematic Video 3">
+            </a>
+        </div>
+    </section>
+    <script>
+        // Smooth scrolling behavior
+        document.querySelectorAll('.scroll-to').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
